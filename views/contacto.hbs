@@ -1,0 +1,43 @@
+
+<div class="contacto">
+    <div>
+        <h2>Contacto Rapido</h2>
+        <form action="/contacto" method="post" class="formulario">
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" />
+            </p>
+            <p>
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono" name="telefono" placeholder="Telefono" />
+            </p>
+            <p>
+                <label for="comentario">Mensajes</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"
+                    placeholder="Dejenos aqui su mensaje"></textarea>
+            </p>
+            <p><label for="enviar"></label>
+                <input type="submit" id="enviar">
+            </p>
+        </form>
+            <h4>{{message}}</h4>
+    </div>
+    <div class="datos">
+        <h2>Otras vias de contacto</h2>
+        <p>Tambien puede contactarse con nosotros usando los siguientes medios</p>
+        <ul>
+            <li>Telefono: 12345-6789</li>
+            <li>Email: contacto@elcalderohumeante.com.ar</li>
+            <li>Facebook: facebook.com/elcalderohumeante</li>
+            <li>Twitter: @elcalderohumeante</li>
+            
+        </ul>
+    </div>
+</div>
+
+
+

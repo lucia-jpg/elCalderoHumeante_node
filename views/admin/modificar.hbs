@@ -1,0 +1,38 @@
+<div class="container margenes">
+
+    <div class="row">
+        <div class="col">
+            <h2>Modificar una promoción</h2>
+
+
+            <form action="/admin/promociones/modificar" method="post">
+                <input type="hidden" value="{{promociones.id}}" name="id">
+
+                <div class="mb-3">
+                    <label for="" class="form-label" style="color:wheat">Título</label>
+                    <input type="text" class="form-control" name="titulo" value="{{promociones.titulo}}">
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label" style="color:wheat">Subtítulo</label>
+                    <textarea class="form-control" rows="2" name="subtitulo">{{promociones.subtitulo}}</textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label" style="color:wheat">Cuerpo</label>
+                    <textarea class="form-control" rows="6" name="cuerpo">{{promociones.cuerpo}}</textarea>
+                </div>
+
+                <div class="col-auto"><button type="submit" class="btn btn-primary mb-3">Modificar</button>
+                </div>
+            </form>
+
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+
+        </div>
+
+    </div>
+
+</div>

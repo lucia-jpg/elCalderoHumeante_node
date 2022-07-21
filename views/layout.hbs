@@ -1,10 +1,109 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    {{{body}}}
-  </body>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Caldero Humeante</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Orelega+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/responsive.css">
+  <title>{{title}}</title>
+</head>
+
+<body>
+  <header>
+    <div class="holder">
+      <p class="blog">Tienda<span>deCAFÉ</span></p>
+      <div class="vapour">
+        <span style="--v:1;"></span>
+        <span style="--v:2;"></span>
+        <span style="--v:5;"></span>
+        <span style="--v:4;"></span>
+        <span style="--v:6;"></span>
+        <span style="--v:19;"></span>
+        <span style="--v:7;"></span>
+        <span style="--v:8;"></span>
+        <span style="--v:9;"></span>
+        <span style="--v:10;"></span>
+        <span style="--v:11;"></span>
+        <span style="--v:18;"></span>
+      </div>
+      <h1>EL CALDERO <img src="images/caldero.png" width="80px" height="80px" alt="caldero">HUMEANTE</h1>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="holder">
+      <nav>
+        <div class="topnav" id="myTopnav">
+          <a class="{{#if isHome}}activo{{/if}}" href="/">Home</a>
+          <a class="{{#if isHome}}activo{{/if}}" href="/nosotros">Nosotros</a>
+          <a class="{{#if isHome}}activo{{/if}}" href="/galeria">Galería</a>
+          <a class="{{#if isHome}}activo{{/if}}" href="/promociones">Promociones</a>
+          <a class="{{#if isHome}}activo{{/if}}" href="/cursos">Cursos</a>
+          <a class="{{#if isHome}}activo{{/if}}" href="/contacto">Contacto</a>
+        </div>
+      </nav>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="holder">
+      {{{body}}}
+  </main>
+
+</body>
+
+<footer class="holder footer-distributed">
+
+  <div class="footer-left">
+    <h3>EL CALDERO HUMEANTE</h3>
+
+    <p class="footer-links">
+      <a href="#">Home</a>
+      |
+      <a href="#">Nosotros</a>
+      |
+      <a href="#">Contacto</a>
+    </p>
+
+    <p class="footer-company-name">© 2019 Eduonix Learning Solutions Pvt. Ltd.</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>309 - Lorem ipsum,
+          Bldg. No. A - 1, Sector - 1</span>
+        lorem ipsum- 400710</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+54 11-12345-6789</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="">consultas@elcalderoh.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>Acerca de Nosotros</span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque incidunt maxime Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    </p>
+    <div class="footer-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
 </html>

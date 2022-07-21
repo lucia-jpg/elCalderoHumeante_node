@@ -1,0 +1,130 @@
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 700px) {
+
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+
+    /* .holder {
+        padding: 0px 10px;
+    } */
+
+    header .holder {
+        background-image: none;
+        padding: 5px;
+    }
+
+    .holder p {
+        font-size: 15px;
+    }
+
+    .item5 {
+        display: none;
+    }
+
+    .holder h1 img {
+        display: none;
+    }
+
+    .holder h1 {
+        font-size: 40px;
+        background-image: url(/images/backgroundh1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        padding: 30px;
+    }
+
+    .grid-contenedor .item1 {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+    .holder .blog span {
+        font-size: 22px;
+    }
+
+
+    .holder .blog {
+        font-size: 22px;
+    }
+
+
+    .holder .eslogan {
+        display: none;
+    }
+
+    .topnav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .topnav a {
+        font-size: 14px;
+    }
+
+
+    .topnav a:hover {
+        background-color: #000000;
+    }
+
+    .grid-contenedor {
+        grid-template-areas:
+            'arribaiz arribaiz'
+            'arribadere arribadere'
+            'abajoiz abajoiz'
+            'abajoiz2 abajoiz2'
+            'abajodere abajodere';
+    }
+
+
+    .item1 h2 {
+        font-size: 25px;
+    }
+
+
+    .item2 h3{
+        font-size: 20px;
+    }
+
+    .item3 h3 {
+        font-size: 20px;
+    }
+
+    .item4 h2 {
+        font-size: 20px;
+    }
+
+    .item4 p{
+        display:none;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .footer-left h3{
+        display: none;
+    }
+
+    .footer-left p{
+        display: none;
+    }
+	
+	.footer-distributed .footer-center {
+		display:block;
+		margin-bottom: 20px;
+		text-align: left;
+        
+	}
+
+
+    .footer-icons{
+        display: none;
+    }
+}

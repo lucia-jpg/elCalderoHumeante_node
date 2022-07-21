@@ -1,8 +1,923 @@
+/* font-family: 'Dancing Script', cursive; 
+font-family: 'Orelega One', cursive;*/
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: black;
+    font-size: 20px;
 }
 
-a {
-  color: #00B7FF;
+.holder {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header .holder {
+    background-image: url("/images/backgroundh1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.holder h1 img {
+    position: relative;
+    right: 8px;
+    top: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(230, 226, 220);
+    background-image: url("/images/fondoarpillera.webp");
+    opacity: 80%;
+}
+
+
+h1 {
+    position: relative;
+    bottom: 120px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid white;
+    text-shadow: -3px 3px black;
+    font-size: 70px;
+}
+
+p {
+    font-family: arial;
+    font-size: 10px;
+}
+
+
+/*vaopor café*/
+.vapour {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.vapour span {
+    position: relative;
+    bottom: 50px;
+    display: block;
+    margin: 0 2px 50px;
+    min-width: 8px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    opacity: 0;
+    filter: blur(10px);
+    animation-delay: calc(var(--v) * -0.5s);
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-150px) scaleX(5);
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-300px) scaleX(10);
+    }
+}
+
+/*fin vapor café*/
+
+
+header .blog {
+    margin: 0 auto;
+    display: inline-flex;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 50px;
+}
+
+.blog {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+span {
+    font-family: 'Orelega One', cursive;
+    text-shadow: -2px 2px black;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+ul.holder {
+    padding-left: 0;
+}
+
+
+.topnav {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(131, 90, 25, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.topnav {
+    display: flex;
+}
+
+.topnav a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    text-shadow: -2px 2px black;
+    padding: 8px 16px;
+    text-align: center;
+    border-right: 1px dotted black;
+    width: 100%;
+}
+
+.topnav a.active {
+    background-color: #000000;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+.item1 h2 {
+    color: rgb(231, 217, 193);
+    font-family: 'Orelega One', cursive;
+    text-shadow: -3px 3px black;
+    font-size: 20;
+    font-weight: 300;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0;
+}
+
+.holder .item1 img {
+    width: 100%;
+    left: 38px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    filter: brightness(80%)
+}
+
+.item1 img:hover {
+    filter: none;
+}
+
+
+main .item1 {
+    grid-area: arribaiz;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(59, 40, 11) 0%, rgba(0, 0, 0, 1) 100%);
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    border-radius: 3px;
+}
+
+main .item1 p {
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    text-align: left;
+    margin: 8px 30px;
+}
+
+h2 {
+    color: white;
+    font-size: 25;
+
+}
+
+h3 {
+    color: white;
+    font-size: 25;
+    text-decoration: 1px underline;
+}
+
+
+main .item2 {
+    position: relative;
+    bottom: 14px;
+    grid-area: abajoiz;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+main .item3 {
+    position: relative;
+    bottom: 14px;
+    grid-area: abajoiz2;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+main .item4 {
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 100;
+    grid-area: arribadere;
+    border: 2px solid #999;
+    border-radius: 5px;
+    padding: 20px;
+    /* background-color: rgb(36, 24, 4) */
+}
+
+main .item4 h2 {
+    box-sizing: border-box;
+    font-size: 30px;
+    text-shadow: -2px 2px black;
+    padding: 30px;
+    background-color: rgb(134, 103, 60);
+    border-radius: 3px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+main .item4 h2 {
+    width: 100%;
+}
+
+main .item4 p {
+    width: 40%;
+    position: relative;
+    left: 170px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+main .item5 {
+    position: relative;
+    left: 15px;
+    bottom: 14px;
+    grid-area: abajodere;
+    background-color: rgb(94, 71, 38);
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.item5 img {
+    position: relative;
+    left: 125px;
+}
+
+
+.grid-contenedor {
+    display: grid;
+    grid-template-areas:
+        'arribaiz arribaiz aaribaiz arribadere arribadere'
+        'abajoiz abajoiz2 abajodere abajodere abajodere';
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+
+main p {
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    box-sizing: border-box;
+    padding: 6px;
+    margin-bottom: 15px;
+}
+
+button {
+    border: 2px solid rgb(204, 200, 191);
+    border-radius: 4px;
+    font-size: 15px;
+    color: white;
+    text-shadow: -1.5px 1.5px black;
+    font-weight: 550;
+    background-color: rgb(55, 53, 51);
+}
+
+.grid-contenedor button:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+main .introducción {
+    border: none;
+}
+
+.slider-container {
+    height: 200px;
+    color: white;
+}
+
+/* FIN HOME */
+
+
+
+/* INICIO NOSOTROS */
+
+.personas {
+    display: flex;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.persona {
+    border: 1px solid rgb(63, 42, 20);
+    border-radius: 0 80px;
+    /* -webkit-box-shadow: -2px 5px 68px 5px rgb(99, 68, 19);
+    -moz-box-shadow: -2px 5px 68px 5px rgb(98, 91, 59);
+    box-shadow: -2px 5px 68px 5px rgb(71, 57, 42); */
+    text-align: center;
+    box-sizing: border-box;
+    /* padding: 15px; */
+    padding: 20px;
+    margin: 15px;
+
+}
+
+
+.persona img {
+    box-sizing: border-box;
+    /* border-radius: 50%; */
+    margin-top: 5px;
+    border-radius: 0 50px;
+}
+
+
+.contacto-contenedor h2,
+.nuestros-cursos h2,
+.staff {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.staff h2 {
+    color: rgb(231, 217, 193);
+    font-family: 'Orelega One', cursive;
+    text-shadow: -3px 3px black;
+    font-size: 40;
+    font-weight: 300;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0;
+}
+
+h5 {
+    box-sizing: border-box;
+    color: rgb(194, 164, 105);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    border-bottom: 1px solid darkgoldenrod;
+}
+
+.staff p {
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.persona:nth-child(odd) {
+    background-color: rgb(92, 71, 43);
+}
+
+/* FIN NOSOTROS */
+
+
+
+/* INICIO CURSOS*/
+
+.holder .info {
+    display: flex;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    background-image: url("/images/fondomadera.jpg");
+}
+
+
+.holder h2 {
+    color: rgb(231, 217, 193);
+    font-family: 'Orelega One', cursive;
+    text-shadow: -3px 3px black;
+    font-size: 40;
+    font-weight: 300;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.holder .cursos {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+
+.cursos button {
+    background-color: rgb(62, 49, 26);
+    border: 2px solid rgb(231, 228, 225);
+    border-radius: 15px;
+    padding: 8px 25px;
+    position: absolute;
+    bottom: 1px;
+    left: 67%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.cursos button:hover {
+    color: black;
+    text-shadow: none;
+    cursor: pointer;
+    background-color: rgb(207, 193, 193);
+}
+
+.holder .info h4 {
+    color: rgb(219, 194, 160);
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+.holder .info h4,
+.holder .info p {
+    text-shadow: -2px 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0px 30px;
+}
+
+
+.holder .info p {
+    color: #e3e2de;
+    background-color: rgb(40, 28, 19);
+}
+
+.nuestros-cursos p {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+/* FIN CURSOS */
+
+
+/* INICIO GALERÍA */
+
+h4 {
+    color: rgb(131, 104, 58);
+    font-size: 35px;
+    font-family: 'Orelega One', cursive;
+
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.intro-productos p,
+.intro-productos h2 {
+    text-align: center;
+}
+
+.intro-productos p {
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.producto img {
+    align-items: center;
+    border: 1px solid rgb(155, 144, 144);
+    background-color: rgb(131, 104, 58);
+    border-radius: 50%;
+}
+
+
+.producto {
+    width: 23%;
+    box-sizing: border-box;
+    padding: 30px 5px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 60px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+
+.producto h4 {
+    text-align: center;
+    background-color: #342c19;
+}
+
+.producto button {
+    display: flex;
+    background-color: #fffefc;
+    border: 2px solid rgb(175, 164, 81);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    left: 80px;
+}
+
+.producto button p {
+    color: #000000;
+    font-family: arial;
+    font-weight: 200;
+    text-shadow: none;
+    justify-content: center;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.producto button img {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.color-botón:hover {
+    background-color: #817558;
+    border: 2px solid #342c19;
+    -webkit-box-shadow: 1px 2px 22px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 2px 22px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 2px 22px 0px rgba(0, 0, 0, 0.75);
+    text-decoration: underline 1px black;
+}
+
+.producto:hover {
+    background-color: rgb(98, 86, 67);
+}
+
+.producto h4 {
+    transition: all 0.5s ease;
+}
+
+.producto:hover h4 {
+    color: rgb(175, 164, 81);
+}
+
+.producto img {
+    transition: all 0.5s ease;
+    transform: scale(0.9);
+}
+
+.producto:hover img {
+    transform: scale(1);
+}
+
+main.producto[data-aos-duration="400"] [data-aos] {
+    transition-duration: 2s;
+}
+
+
+
+/*inicio contacto */
+.contacto {
+    display: flex;
+    justify-content: space-around;
+}
+.datos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+
+.contacto p,
+.contacto ul li {
+    font-size: 14px;
+    color:white;
+    font-weight: normal;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p label {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.formulario p input,
+.formulario p textarea {
+    width: 20rem;
+    display: flex;
+    background-color: #ddd; 
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+.formulario p textarea {
+    height: 150px;
+    resize: none;
+}
+
+.formulario input[type="submit"] {
+    background-color: #5d4a31;
+    border-radius: 3px;
+    width: auto;
+    color: white;
+    padding: 6px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: #2e64a1;
+}
+
+
+/* FIN CONTACTO */
+
+/*INICIO FOOTER */
+
+.holder footer{
+	/* position: fixed; */
+	bottom: 0;
+}
+
+
+.holder.footer-distributed{
+	background:linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(59, 40, 11) 0%, rgba(0, 0, 0, 1) 100%);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.holder.footer-distributed .footer-left,
+.holder.footer-distributed .footer-center,
+.holder.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.holder.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.holder.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 20px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+
+/* Footer links */
+
+.holder.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.holder.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.holder.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.holder.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.holder.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.holder.footer-distributed .footer-center i.fa-envelope{
+	font-size: 23px;
+	line-height: 38px;
+}
+
+.holder.footer-distributed.footer-center a.fa-envelope {
+    font-size: 20px;
+}
+
+.holder.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.holder.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.holder.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;
+}
+
+
+/* Footer Right */
+
+.holder.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.holder.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.holder.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.holder.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.holder.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
 }
