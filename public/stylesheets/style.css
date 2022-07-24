@@ -1,6 +1,8 @@
 /* font-family: 'Dancing Script', cursive; 
 font-family: 'Orelega One', cursive;*/
 
+/*LAYOUT*/
+
 body {
     background-color: black;
     font-size: 20px;
@@ -46,7 +48,7 @@ p {
 }
 
 
-/*vaopor café*/
+/*VAPOR CAFÉ*/
 .vapour {
     position: relative;
     display: flex;
@@ -94,7 +96,7 @@ p {
     }
 }
 
-/*fin vapor café*/
+/*fIN VAPOR CAFÉ*/
 
 
 header .blog {
@@ -130,11 +132,11 @@ ul.holder {
     padding-left: 0;
 }
 
-
+/*NAV*/
 .topnav {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(131, 90, 25, 1) 0%, rgba(0, 0, 0, 1) 100%);
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .topnav {
@@ -162,6 +164,22 @@ ul.holder {
 .topnav .icon {
     display: none;
 }
+
+/*FIN NAV */
+
+/*FOOTER*/
+
+
+
+/*FIN FOOTER*/
+
+/*FIN LAYOUT*/
+
+
+
+
+
+/* EMPIEZA INDEX(HOME) */
 
 
 .item1 h2 {
@@ -274,7 +292,7 @@ main .item4 p {
     left: 170px;
 }
 
-/* Slideshow container */
+/* CARRUSEL */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -282,12 +300,11 @@ main .item4 p {
     margin-top: 25px;
 }
 
-/* Hide the images by default */
+
 .mySlides {
     display: none;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -304,19 +321,16 @@ main .item4 p {
     user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -327,7 +341,7 @@ main .item4 p {
     text-align: center;
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -336,7 +350,7 @@ main .item4 p {
     top: 0;
 }
 
-/* The dots/bullets/indicators */
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -353,7 +367,7 @@ main .item4 p {
     background-color: #717171;
 }
 
-/* Fading animation */
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -375,14 +389,17 @@ main .item5 {
     bottom: 14px;
     grid-area: abajodere;
     background-color: rgb(94, 71, 38);
-    border-radius: 3px;
+    border: 3px solid rgb(66, 48, 30);
+    border-radius: 10px;
     box-sizing: border-box;
-    margin: 20px 0;
+    margin: 20px 10px;
+
 }
 
 .item5 img {
     position: relative;
     left: 125px;
+    height: 450px;
 }
 
 
@@ -437,6 +454,9 @@ main .introducción {
 
 
 
+
+
+
 /* INICIO NOSOTROS */
 
 .personas {
@@ -448,12 +468,8 @@ main .introducción {
 .persona {
     border: 1px solid rgb(63, 42, 20);
     border-radius: 0 80px;
-    /* -webkit-box-shadow: -2px 5px 68px 5px rgb(99, 68, 19);
-    -moz-box-shadow: -2px 5px 68px 5px rgb(98, 91, 59);
-    box-shadow: -2px 5px 68px 5px rgb(71, 57, 42); */
     text-align: center;
     box-sizing: border-box;
-    /* padding: 15px; */
     padding: 20px;
     margin: 15px;
 
@@ -462,7 +478,6 @@ main .introducción {
 
 .persona img {
     box-sizing: border-box;
-    /* border-radius: 50%; */
     margin-top: 5px;
     border-radius: 0 50px;
 }
@@ -603,7 +618,7 @@ h4 {
 
 }
 
-.productos {
+.holder .productos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -631,7 +646,7 @@ h4 {
 .producto {
     width: 23%;
     box-sizing: border-box;
-    padding: 30px 5px;
+    padding: 25px 5px;
     border: 1px solid grey;
     border-radius: 10px;
     margin: 60px;
@@ -707,6 +722,29 @@ main.producto[data-aos-duration="400"] [data-aos] {
     transition-duration: 2s;
 }
 
+/*Fin galería*/
+
+/*Inicio Promociones*/
+
+.promociones h3{
+    font-size: 30px;
+    text-shadow: -2px -2px black;
+    text-decoration: none;
+    background-color: #5d4a31;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.promociones h4{
+    font-size: 25px;
+    color:#cca13e;
+}
+
+
+
+/*Fin promociones*/
 
 
 /*inicio contacto */
@@ -784,7 +822,7 @@ main.producto[data-aos-duration="400"] [data-aos] {
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
+	margin-top: 20px;
 }
 
 .holder.footer-distributed .footer-left,
@@ -800,7 +838,12 @@ main.producto[data-aos-duration="400"] [data-aos] {
 	width: 30%;
 }
 
-.holder.footer-distributed h3{
+.holder.footer-distributed .footer-left h3{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.footer-distributed h3{
 	color:  #ffffff;
 	font: normal 20px 'Cookie', cursive;
 	margin: 0;
@@ -855,9 +898,6 @@ main.producto[data-aos-duration="400"] [data-aos] {
 	line-height: 38px;
 }
 
-.holder.footer-distributed.footer-center a.fa-envelope {
-    font-size: 20px;
-}
 
 .holder.footer-distributed .footer-center p{
 	display: inline-block;
@@ -902,22 +942,28 @@ main.producto[data-aos-duration="400"] [data-aos] {
 }
 
 .holder.footer-distributed .footer-icons{
-	margin-top: 25px;
+	margin-top: 20px;
 }
 
 .holder.footer-distributed .footer-icons a{
 	display: inline-block;
-	width: 35px;
-	height: 35px;
+	width: 40px;
+	height: 40px;
 	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
+	background-color:  #0d0d0d;
+	border-radius: 4px;
 
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
+    text-decoration: none;
 
-	margin-right: 3px;
+	margin-right: 6px;
 	margin-bottom: 5px;
 }
+
+.holder.footer-distributed .footer-icons img {
+    margin-top: 4px;
+}
+
