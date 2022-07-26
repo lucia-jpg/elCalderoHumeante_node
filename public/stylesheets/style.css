@@ -724,11 +724,14 @@ main.producto[data-aos-duration="400"] [data-aos] {
 
 /*Fin galería*/
 
+
+
 /*Inicio Promociones*/
 
 .promociones h3{
     font-size: 30px;
-    text-shadow: -2px -2px black;
+    font-family: cambria;
+    text-shadow: -2px -3px black;
     text-decoration: none;
     background-color: #5d4a31;
     border-radius: 5px;
@@ -738,10 +741,11 @@ main.producto[data-aos-duration="400"] [data-aos] {
 }
 
 .promociones h4{
-    font-size: 25px;
+    font-size: 28px;
     color:#cca13e;
+    text-decoration: underline 1px;
+    text-align: center;
 }
-
 
 
 /*Fin promociones*/
@@ -801,7 +805,8 @@ main.producto[data-aos-duration="400"] [data-aos] {
 }
 
 .formulario input[type="submit"]:hover{
-    background-color: #2e64a1;
+    background-color: #ba8437;
+    text-decoration: underline 1px;
 }
 
 
