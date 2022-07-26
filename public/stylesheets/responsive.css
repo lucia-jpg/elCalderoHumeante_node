@@ -112,8 +112,7 @@
     }
 
     main .item1 p {
-        line-height: 150%;
-        
+        line-height: 150%; 
     }
 
 
@@ -156,6 +155,11 @@
         font-size: 15px;
     }
 
+    .holder.footer-distributed{
+        padding: 0px;
+    }
+
+
     .footer-left h3{
         display: none;
     }
@@ -167,9 +171,17 @@
 	.footer-distributed .footer-center {
 		display:block;
 		margin-bottom: 20px;
-		text-align: left;
+		text-align: center;
+        position: relative;
+        right: 110px;
         
 	}
+
+    .footer-distributed .footer-right{
+        text-align: center;
+        box-sizing: border-box;
+        padding: 30px 20px 0px 0px ;
+    } 
 
 
     .footer-icons{

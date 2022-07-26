@@ -221,6 +221,7 @@ main .item1 p {
     justify-content: center;
     text-align: left;
     margin: 8px 30px;
+    line-height: 140%;
 }
 
 h2 {
@@ -289,7 +290,8 @@ main .item4 h2 {
 main .item4 p {
     width: 40%;
     position: relative;
-    left: 170px;
+    left: 165px;
+    top:50px;
 }
 
 /* CARRUSEL */
