@@ -174,13 +174,14 @@
 		text-align: center;
         position: relative;
         right: 110px;
+        top: 20px;
         
 	}
 
     .footer-distributed .footer-right{
         text-align: center;
         box-sizing: border-box;
-        padding: 30px 20px 0px 0px ;
+        padding: 30px 20px 14px 0px;
     } 
 
 
