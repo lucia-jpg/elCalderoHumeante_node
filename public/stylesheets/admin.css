@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: black;
+background-color: black;
 }
 
 main .holder {
@@ -13,11 +13,16 @@ main .holder {
 }
 
 h1 {
+    display: block;
     color:white;
+    text-shadow: -2px -3px black;
+    background:linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(59, 40, 11) 0%, rgba(0, 0, 0, 1) 100%);
     font-size: 45px;
     text-decoration: underline 1px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: center;
+    padding:35px;
+    
 }
 
 h2 {
@@ -30,4 +35,8 @@ margin-top:20px;
 
 .holder h1{
     margin-top: 100px;
+}
+
+.error {
+    color:white;
 }
