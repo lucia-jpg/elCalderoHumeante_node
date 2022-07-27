@@ -22,23 +22,23 @@
 
     .item1 {
         position: relative;
-        bottom:120px;
+        bottom: 120px;
     }
 
-    .item1 img{
+    .item1 img {
         height: 220px;
     }
 
     .item4 {
         position: relative;
-        bottom:100px;
+        bottom: 100px;
     }
 
-    .item4 img{
+    .item4 img {
         height: 200px;
     }
 
-  
+
 
     .holder p {
         font-size: 15px;
@@ -83,7 +83,7 @@
 
     .topnav {
         position: relative;
-        bottom:110px;
+        bottom: 110px;
         flex-direction: column;
         width: 100%;
     }
@@ -112,26 +112,26 @@
     }
 
     main .item1 p {
-        line-height: 150%; 
+        line-height: 150%;
     }
 
 
-    .item2 h3{
+    .item2 h3 {
         font-size: 20px;
     }
 
     main .item2 {
-        position:relative;
+        position: relative;
         bottom: 100px;
     }
 
     main .item3 {
-        position:relative;
+        position: relative;
         bottom: 120px;
     }
 
     main .item3 p,
-    main .item2 p{
+    main .item2 p {
         box-sizing: border-box;
         padding: 5px 45px;
         line-height: 200%;
@@ -147,49 +147,117 @@
         text-align: center;
     }
 
-    .item4 p{
-        display:none;
+    .item4 p {
+        display: none;
     }
 
     h4 {
         font-size: 15px;
     }
 
-    .holder.footer-distributed{
+    /*FIN INDEX*/
+
+    /* INICIO FOOTER*/
+
+    .holder.footer-distributed {
         padding: 0px;
     }
 
 
-    .footer-left h3{
+    .footer-left h3 {
         display: none;
     }
 
-    .footer-left p{
+    .footer-left p {
         display: none;
     }
-	
-	.footer-distributed .footer-center {
-		display:block;
-		margin-bottom: 20px;
-		text-align: center;
+
+    .footer-distributed .footer-center {
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
         position: relative;
         right: 110px;
         top: 20px;
-        
-	}
 
-    .footer-distributed .footer-right{
+    }
+
+    .footer-distributed .footer-right {
         text-align: center;
         box-sizing: border-box;
         padding: 30px 20px 14px 0px;
-    } 
+    }
 
 
-    .footer-icons{
+    .footer-icons {
         display: none;
+    }
 
+    /* FIN FOOTER*/
+
+
+    /*INICIO NOSOTROS*/
+
+    .holder .personas {
+
+        display: inline-flex;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+
+    .holder .personas .persona img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*FIN NOSOTROS*/
+
+
+    /*INICIO GALERIA*/
+
+    .holder .productos .producto {
+        align-items: center;
+        width: 100%;
+    }
+
+    /*FIN GALERIA*/
+
+    .holder .cursos img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .holder .cursos p {
+        display: none;
+    }
+
+    .holder .cursos button {
+        height: 40px;
+        width: 90px;
+        font-size: 10px;
+        top: 90px;
+    }
+
+    .holder .cursos h4{
+        font-size: 18px;
+    }
+
+    .contacto{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto form {
+        box-sizing: border-box;
+        padding: 20px;
+        width: 85%;
+    }
+
+    .contacto .datos{
+        
+        box-sizing: border-box;
+        padding: 20px;
 }
-
-    /*FIN INDEX*/
 
 }
